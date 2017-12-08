@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#280034"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Label_PartList"
+            android:id="@+id/textView"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/part_list"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            />
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp" android:gravity="center">
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Btn_Random"
+                android:id="@+id/random"
+                android:drawableLeft="@drawable/ic_practice"
+                style="@style/IconButton"
+                android:layout_weight="1" android:layout_marginRight="2dp"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Btn_Notes"
+                android:id="@+id/notes"
+                android:drawableLeft="@drawable/ic_notes"
+                style="@style/IconButton"
+                android:layout_weight="1" android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+</LinearLayout>

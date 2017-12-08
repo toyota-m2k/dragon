@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffc7c9"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fffc73"
+            android:layout_marginBottom="10dp">
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="ファイルを開く"
+                android:textColor="#223300"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center|center_vertical" android:textSize="18sp" android:textStyle="bold"/>
+        <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ok"
+                android:src="@drawable/ic_ok"
+                style="@style/BrightIconButton"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/Msg_OK"
+                />
+
+        <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/cancel"
+                android:src="@drawable/ic_cancel"
+                style="@style/BrightIconButton"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/Msg_CANCEL"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/file_name_field">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ファイル名"
+                android:layout_marginRight="5dp"
+                android:textColor="#000000" android:textSize="14sp" android:textIsSelectable="true"
+                android:layout_marginLeft="5dp"/>
+
+        <com.michael.dragon.ui.UiEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="file name"
+                android:id="@+id/file_name"
+                android:layout_weight="1"
+                android:privateImeOptions="com.metamoji.mazecapi?stroke_input=false"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <!--
+                //android:background="@drawable/dlg_image_button_background"
+         -->
+
+        <FrameLayout
+                android:background="#bbcc80"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+             >
+            <!--
+                android:layout_marginRight="@dimen/bodyPaddingRight"
+                android:layout_marginRight="@dimen/controlSpace"
+             -->
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="folder path"
+                    android:id="@+id/cur_dir"
+                    android:textColor="#000000" android:textSize="18dp" android:textIsSelectable="true"
+                    android:layout_marginLeft="5dp"/>
+        </FrameLayout>
+
+        <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/prevHistory"
+                android:src="@drawable/ic_back"
+                style="@style/IconButton"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/Msg_Back"/>
+
+        <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/nextHistory"
+                android:src="@drawable/ic_forward"
+                style="@style/IconButton"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/Msg_Forward"
+                />
+        <!--<ImageButton-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:id="@+id/createFolder"-->
+                <!--android:src="@drawable/ic_add"-->
+                <!--style="@style/IconButton"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:layout_marginLeft="2dp"-->
+                <!--android:layout_marginRight="4dp"/>-->
+        <!--
+                //android:background="@drawable/dlg_image_button_background"
+         -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.michael.dragon.ui.UiFileListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideOverlay"
+            android:background="#ffffff"
+            android:id="@+id/file_view"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
