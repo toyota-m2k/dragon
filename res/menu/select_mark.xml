@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/normal" android:title="@string/normal" android:icon="@drawable/ic_normal_important"/>
-    <item android:id="@+id/important" android:title="@string/important" android:icon="@drawable/ic_important"/>
-    <item android:id="@+id/very_important" android:title="@string/very_important" android:icon="@drawable/ic_middle_important"/>
-    <item android:id="@+id/extra_important" android:title="@string/extra_important" android:icon="@drawable/ic_extra_important"/>
-</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="lightblue">#6be6ff</color>
+    <color name="pbtn_back1">#afe5ff</color>
+    <color name="pbtn_back2">#b2ffbe</color>
+    <color name="pbtn_back_p1">#f7ff59</color>
+    <color name="pbtn_back_p2">#f0ffdd</color>
+    <color name="pbtn_stroke">#403ed5</color>
+</resources>
