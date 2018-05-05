@@ -11,7 +11,9 @@
             android:text="@string/Label_BookList"
             android:id="@+id/textView"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
     <ListView
             android:layout_width="fill_parent"
             android:layout_height="0dp"
